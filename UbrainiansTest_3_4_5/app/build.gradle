@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.serhii.ubrainianstest"
+        minSdkVersion 22
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:3.7.0'
+    }
+}
+
+// Required because retrolambda is on maven central
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // design support
+    compile 'com.android.support:design:26.+'
+    // butter knife support
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    // retrofit2 support
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.7.5'
+    // gson support
+    compile 'com.google.code.gson:gson:2.7'
+    // dagger support
+    compile 'com.google.dagger:dagger:2.0.2'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.0.2'
+    provided 'javax.annotation:jsr250-api:1.0'
+    // rx support
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    // multidex support
+    compile 'com.android.support:multidex:1.0.1'
+    // recyclerView support
+    compile 'com.android.support:recyclerview-v7:26.+'
+    // glide support
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    // cardView support
+    compile 'com.android.support:cardview-v7:26.+'
+    // realm support
+    compile 'io.realm:realm-android:0.87.4'
+    annotationProcessor 'io.realm:realm-android:0.87.4'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}

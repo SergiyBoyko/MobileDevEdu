@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LabQuick</string>
+    <string name="avenir">Avenir</string>
+    <string name="cizel">Cinzel Regular</string>
+    <string name="keepkalm">Keepcalm medium</string>
+    <string name="platino">Platino linotype</string>
+    <string name="pz">PZ Raleigh</string>
+    <string name="rounded">Rounded elegance</string>
+    <string name="cancel">cancel</string>
+    <string name="ok">ok</string>
+
+</resources>

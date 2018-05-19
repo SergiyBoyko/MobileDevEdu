@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ProjectAndroid</string>
+    <string name="geo_names_title">GEO</string>
+    <string name="panorama_title">PANORAMA</string>
+    <string name="zip_image_title">ZIP</string>
+    <string name="request_execution_has_failed">Request execution has failed. Check your internet connection</string>
+    <string name="no_results">No Results</string>
+    <string name="delete_this_saved_element">Delete?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="realm_id">id</string>
+    <string name="realm_name">name</string>
+    <string name="dowloading">Downloading...</string>
+    <string name="no_correct_zip_url">No correct zip url</string>
+    <string name="test_url">https://www.look.com.ua/top/look.com.ua_2016.02-111-1366x768.zip</string>
+</resources>

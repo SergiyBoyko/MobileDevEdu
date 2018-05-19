@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/text_source"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/some_text"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="10dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/black_bg_with_border"
+        android:editable="false"
+        android:padding="10dp"
+        android:text="@string/click_ok_for_result"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/black_bg"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/black_bg"
+            android:text="@string/ok"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

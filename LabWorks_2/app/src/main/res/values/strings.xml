@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LabWork</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="some_text">Some text</string>
+    <string name="click_ok_for_result">Click OK for result</string>
+</resources>
